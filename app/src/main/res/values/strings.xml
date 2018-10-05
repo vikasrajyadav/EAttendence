@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EAttendence</string>
+    <string name="rollno">Roll no.</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone no.</string>
+
+    <string-array name="Departments">
+        <item>Select Department</item>
+        <item>Computer Engineering</item>
+        <item>Information Technology Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Instrumentation Engineering</item>
+        <item>Electronics and Telecommunication Engineering</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>Select Year</item>
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+    </string-array>
+</resources>
