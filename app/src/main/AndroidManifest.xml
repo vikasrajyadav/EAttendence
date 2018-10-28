@@ -3,8 +3,12 @@
     package="com.vikasraj.eattendence">
 
     <permission android:name="android.permission.INTERNET" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +25,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".UserActivity"></activity>
+        <activity android:name=".UserActivity" />
+        <activity android:name=".facultyLoginActivity" />
+        <activity android:name=".FacultyActivity" />
+        <activity android:name=".SameScheduleAttend" />
+        <activity android:name=".ChangeInScheduleAttend" />
+        <activity android:name=".AttendenceStartPortal" />
+        <activity android:name=".facultyRegisterActivity" />
+        <activity android:name=".StudentScanningCode"></activity>
     </application>
 
 </manifest>

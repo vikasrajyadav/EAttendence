@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
               final  String department = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(),department,Toast.LENGTH_LONG).show();
+//                Toast.makeText(parent.getContext(),department,Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -57,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 final  String year = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(),year,Toast.LENGTH_LONG).show();
+//                Toast.makeText(parent.getContext(),year,Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -65,6 +65,24 @@ public class RegisterActivity extends AppCompatActivity {
 
             }
         });
+
+        final Spinner spinnerDivision = (Spinner)findViewById(R.id.division);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.division,android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerDivision.setAdapter(adapter2);
+        spinnerDivision.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                final  String year = parent.getItemAtPosition(position).toString();
+//                Toast.makeText(parent.getContext(),year,Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
         final Button bRegister = (Button) findViewById(R.id.Rregister);
 

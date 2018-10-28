@@ -17,34 +17,26 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LoginActivity extends AppCompatActivity {
+public class facultyLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_faculty_login);
 
         final EditText lRollno = (EditText) findViewById(R.id.rollno);
         final EditText lPassword = (EditText) findViewById(R.id.password);
-        final TextView tvRegisterLink = (TextView) findViewById(R.id.register);
-        final TextView tvfacultyLogin = (TextView) findViewById(R.id.facultylogin);
         final Button bLogin = (Button) findViewById(R.id.login);
+        final TextView tvRegisterLink = (TextView) findViewById(R.id.register1);
 
 
         tvRegisterLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-                LoginActivity.this.startActivity(registerIntent);
+                Intent registerIntent = new Intent(facultyLoginActivity.this, facultyRegisterActivity.class);
+                facultyLoginActivity.this.startActivity(registerIntent);
             }
         });
 
-        tvfacultyLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent registerIntent = new Intent(LoginActivity.this, facultyLoginActivity.class);
-                LoginActivity.this.startActivity(registerIntent);
-            }
-        });
 
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,14 +57,14 @@ public class LoginActivity extends AppCompatActivity {
                                 int age = jsonResponse.getInt("age");
                                 int balance = jsonResponse.getInt("balance");
 
-                                Intent intent = new Intent(LoginActivity.this, UserActivity.class);
+                                Intent intent = new Intent(facultyLoginActivity.this, FacultyActivity.class);
                                 intent.putExtra("name", name);
                                 intent.putExtra("age", age);
                                 intent.putExtra("username", username);
                                 intent.putExtra("balance",balance);
-                                LoginActivity.this.startActivity(intent);
+                                facultyLoginActivity.this.startActivity(intent);
                             } else {
-                                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(facultyLoginActivity.this);
                                 builder.setMessage("Username & Password is Incorrect")
                                         .setNegativeButton("Retry", null)
                                         .create()
@@ -85,8 +77,8 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 };
 
-                LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
+                facultyLoginRequest loginRequest = new facultyLoginRequest(username, password, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(facultyLoginActivity.this);
                 queue.add(loginRequest);
             }
         });

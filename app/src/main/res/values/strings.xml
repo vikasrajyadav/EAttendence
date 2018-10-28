@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EAttendence</string>
+    <string name="app_name">E Attendence</string>
     <string name="rollno">Roll no.</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -8,6 +8,20 @@
     <string name="LastName">Last Name</string>
     <string name="email">Email</string>
     <string name="phone">Phone no.</string>
+    <string name="name">Name: </string>
+    <string name="loading">loading...</string>
+    <string name="time">Time</string>
+    <string name="subject">Subject</string>
+    <string name="SameSchedule">Same Schedule</string>
+    <string name="ChanginSchedule">Change in Schedule</string>
+    <string name="startattendence">Start Attendence</string>
+    <string name="date">Date</string>
+    <string name="startportal">Start Portal</string>
+    <string name="subject1">First Subject</string>
+    <string name="subject2">Second Subject</string>
+    <string name="pracs">Practical Subject</string>
+    <string name="facultyregister">Faculty Register</string>
+
 
     <string-array name="Departments">
         <item>Select Department</item>
@@ -25,4 +39,23 @@
         <item>3rd Year</item>
         <item>4th Year</item>
     </string-array>
+
+    <string-array name="Time">
+        <item>Select Time</item>
+        <item>08:30 to 09:30</item>
+        <item>09:30 to 10:30</item>
+        <item>10:30 to 11:30</item>
+        <item>11:30 to 12:30</item>
+        <item>12:30 to 13:30</item>
+        <item>13:30 to 14:30</item>
+        <item>14:30 to 15:30</item>
+        <item>15:30 to 16:30</item>
+    </string-array>
+
+    <string-array name="division">
+        <item>Select Division</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
 </resources>
