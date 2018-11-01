@@ -115,10 +115,14 @@ public class AttendenceStartPortal extends AppCompatActivity {
             int randomNumber = objGenerator.nextInt(100000);
             int randomNumber1 = objGenerator.nextInt(100000);
 
+//
+//        BluetoothAdapter bluetoothAdapter = null;
+//        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+//        bluetoothAdapter.setName("236"+randomNumber+randomNumber1);//Careful Here
+//
+//
+//        intent discoverable = new Intent(BluetoothAdapter.ACTIN_REQUEST_DISCOVERABLE)
 
-        BluetoothAdapter bluetoothAdapter = null;
-        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        bluetoothAdapter.setName("236"+randomNumber+randomNumber1);//Careful Here
     }
 
 }

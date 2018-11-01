@@ -32,7 +32,8 @@
         <activity android:name=".ChangeInScheduleAttend" />
         <activity android:name=".AttendenceStartPortal" />
         <activity android:name=".facultyRegisterActivity" />
-        <activity android:name=".StudentScanningCode"></activity>
+        <activity android:name=".StudentScanningCode" />
+        <activity android:name=".Attendance_succesorfailed"></activity>
     </application>
 
 </manifest>
